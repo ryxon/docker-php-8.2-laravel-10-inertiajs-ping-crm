@@ -8,6 +8,8 @@ export default ({ className }) => {
       <MainMenuItem text="Organizations" link="organizations" icon="office" />
       <MainMenuItem text="Contacts" link="contacts" icon="users" />
       <MainMenuItem text="Reports" link="reports" icon="printer" />
+      {/*Testing /testing*/}
+      <MainMenuItem text="Testing" link="testing" icon="printer" />
     </div>
   );
 };

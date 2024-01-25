@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Inertia\Inertia;
 
 // Auth
 Route::get('login')->name('login')->uses('Auth\LoginController@showLoginForm')->middleware('guest');
@@ -56,3 +57,8 @@ Route::get('reports')->name('reports')->uses('ReportsController')->middleware('a
 Route::get('500', function () {
     //echo $fail;
 });
+
+Route::get('/testing', function () {
+    return Inertia::render('Testing');
+
+})->name('testing');
